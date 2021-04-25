@@ -53,13 +53,13 @@ function detectPersonalLevel(){
 
 detectPersonalLevel();
 
-function showMyDB() {
-    if(!personalMovieDB.privat){
+function showMyDB(arg) {
+    if(!arg){
         console.log(personalMovieDB)
     }
 }
 
-showMyDB();
+showMyDB(personalMovieDB.privat);
 
 function writeYourGenres() {
     for (let i = 0; i < 3; i++) {
